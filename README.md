@@ -1,7 +1,11 @@
 # open_file_safe
 A plug-in that can call native APP to open files with string result in flutter, support iOS(UTI) / android(intent) / PC(ffi) / web(dart:html)
 
-## Fork
+### Working Flutter and Dart SDK versions
+- Flutter: `1.22.6`
+- Dart: `2.10.5`
+
+### Fork
 Remove dangerous permission `REQUEST_INSTALL_PACKAGES` in Android
 
 ## Usage
@@ -10,7 +14,10 @@ To use this plugin, add [open_file](https://pub.dartlang.org/packages/open_file#
 ```yaml
 dependencies:
   #androidx
-  open_file: ^3.0.2 
+  open_file:
+    git:    
+      url: https://github.com/TinchoOlivari/open_file_safe.git
+      ref: master
   #support
   #open_file: ^1.3.0
 ```
