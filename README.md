@@ -1,7 +1,8 @@
-# open_file
-[![pub package](https://img.shields.io/pub/v/open_file.svg)](https://pub.dartlang.org/packages/open_file)
-
+# open_file_safe
 A plug-in that can call native APP to open files with string result in flutter, support iOS(UTI) / android(intent) / PC(ffi) / web(dart:html)
+
+## Fork
+Remove dangerous permission `REQUEST_INSTALL_PACKAGES` in Android
 
 ## Usage
 
@@ -9,7 +10,7 @@ To use this plugin, add [open_file](https://pub.dartlang.org/packages/open_file#
 ```yaml
 dependencies:
   #androidx
-  open_file: ^lastVersion 
+  open_file: ^3.0.2 
   #support
   #open_file: ^1.3.0
 ```
@@ -27,7 +28,7 @@ OpenFile.open("/sdcard/example.txt");
 ```
 {
             {".3gp",    "video/3gpp"},
-            {".apk",    "application/vnd.android.package-archive"},
+            ~~{".apk",    "application/vnd.android.package-archive"},~~
             {".asf",    "video/x-ms-asf"},
             {".avi",    "video/x-msvideo"},
             {".bin",    "application/octet-stream"},

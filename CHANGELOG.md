@@ -1,4 +1,5 @@
 ## 3.0.2
+* Remove dangerous permission `REQUEST_INSTALL_PACKAGES` in Android
 * add storage compatibility mode for AndroidQ.
 * fix [#106](https://github.com/crazecoder/open_file/issues/106) [#100](https://github.com/crazecoder/open_file/issues/100) [#74](https://github.com/crazecoder/open_file/issues/74)
 * fix multiple file providers. (thanks to [@jawa0919](https://github.com/jawa0919))
